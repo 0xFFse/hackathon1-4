@@ -6,9 +6,31 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: #FFF;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.row {
+	display: flex;
+	justify-content: space-around;
+}
+
+.row .col {
+
+}
+
+.row .from {
+	width: 20%;
+}
+
+.row .message {
+	width: 50%;
+}
+.row .receivet_at {
+	width: 30%;
+	text-align: right;
 }
