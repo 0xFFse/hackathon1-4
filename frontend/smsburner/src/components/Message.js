@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Moment from 'react-moment';
 
 class Message extends Component {
   
@@ -6,14 +7,14 @@ class Message extends Component {
     const { message } = this.props;
     return (
       <div className={'row'}>
-        <div>
+        <div className={'from'}>
           <span>{ message.from }</span>
         </div>
-        <div>
+        <div className={'message'}>
           <span>{ message.message }</span>
         </div>
-        <div>
-          <span>{ message.received_at }</span>
+        <div className={'received_at'}>
+          <span><Moment format="DD/MM-YYYY HH:mm">{ message.received_at }</Moment></span>
         </div>
       </div>
     );

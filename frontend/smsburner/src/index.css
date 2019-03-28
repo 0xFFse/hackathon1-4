@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Germania+One');
+
 body {
   margin: 0;
   padding: 0;
@@ -17,6 +19,8 @@ code {
 .row {
 	display: flex;
 	justify-content: space-around;
+	padding: 10px 0;
+	border-bottom: 1px solid #3c3c3c;
 }
 
 .row .col {
@@ -25,12 +29,22 @@ code {
 
 .row .from {
 	width: 20%;
+	text-align: left;
+	font-size: 13px;
+}
+
+.row .from span {
+	padding-right: 10px;
 }
 
 .row .message {
 	width: 50%;
+	text-align: left;
+	font-size: 13px;
+	line-height: 1.5em;
 }
-.row .receivet_at {
+.row .received_at {
 	width: 30%;
 	text-align: right;
+	font-size: 13px;
 }

@@ -1,6 +1,7 @@
 body, .App {
   text-align: center;
-  background-color: #282c34;
+  background-color: rgb(40, 44, 52);
+  font-family: 'Courier';
 }
 
 .App-header {
@@ -10,10 +11,31 @@ body, .App {
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  font-size: 12px;
+}
+h1 {
+  margin: 20px 0 0px;
+  font-family: 'Germania One', cursive;
+  font-size: 5em;
+  text-transform: uppercase;
+  color:#fcbe31;
+}
+h2 {
+  line-height: 1em;
+  margin: 10px 0px 20px;
+  font-family: 'Courier';
+  font-size: 16px;
+}
+h3 {
+  line-height: 1em;
+  margin: 0 0 40px;
+  font-family: 'Courier';
+  font-size: 16px;
+  text-decoration: underline;
 }
 .container {
   width: 90%;
-  max-width: 960px;
+  max-width: 920px;
   margin: 0 auto;
 }
 .messagelist-container {
