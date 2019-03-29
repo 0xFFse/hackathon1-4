@@ -8,13 +8,17 @@ class Message extends Component {
     return (
       <div className={'row'}>
         <div className={'from'}>
-          <span>{ message.from }</span>
+          <span>{ message.sender }</span>
         </div>
         <div className={'message'}>
-          <span>{ message.message }</span>
+          <span>{ message.text }</span>
         </div>
         <div className={'received_at'}>
-          <span><Moment format="DD/MM-YYYY HH:mm">{ message.received_at }</Moment></span>
+          <span>
+            <Moment format="DD/MM-YYYY HH:mm">
+              { message.timestamp }
+            </Moment>
+          </span>
         </div>
       </div>
     );

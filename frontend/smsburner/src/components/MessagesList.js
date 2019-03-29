@@ -27,63 +27,13 @@ class MessagesList extends Component {
 
 	// Get messages from backend
 	getMesssages = function() {
-		const backendUrl = 'http://localhost:3000/';
+		const backendUrl = 'http://hackathon1-2.0xff.se:3000/messages';
 		
 		console.log('Getting messages');
 		axios.get(backendUrl)
     .then(res => {
-    	// Just temp stuff.
-    	console.log('TODO: replace with real data');
-    	const messages = [{
-				'from' : '+4622345678',
-				'message' : 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.',
-				'received_at' : new Date().toISOString()
-			}, {
-				'from' : '+4622345678',
-				'message' : 'This is the message content',
-				'received_at' : new Date().toISOString()
-			}, {
-				'from' : '+4622346578',
-				'message' : 'This is the message content',
-				'received_at' : new Date().toISOString()
-			}, {
-				'from' : '+4622345678',
-				'message' : 'This is the message content',
-				'received_at' : new Date().toISOString()
-			}, {
-				'from' : '+4622345678',
-				'message' : 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.',
-				'received_at' : new Date().toISOString()
-			}, {
-				'from' : '+4622345678',
-				'message' : 'This is the message content',
-				'received_at' : new Date().toISOString()
-			}, {
-				'from' : '+4622346578',
-				'message' : 'This is the message content',
-				'received_at' : new Date().toISOString()
-			}, {
-				'from' : '+4622345678',
-				'message' : 'This is the message content',
-				'received_at' : new Date().toISOString()
-			},{
-				'from' : '+4622345678',
-				'message' : 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.',
-				'received_at' : new Date().toISOString()
-			}, {
-				'from' : '+4622345678',
-				'message' : 'This is the message content',
-				'received_at' : new Date().toISOString()
-			}, {
-				'from' : '+4622346578',
-				'message' : 'This is the message content',
-				'received_at' : new Date().toISOString()
-			}, {
-				'from' : '+4622345678',
-				'message' : 'This is the message content',
-				'received_at' : new Date().toISOString()
-			}];
-     	this.setState({'messages' : messages});
+    	console.log(res.data);
+     	this.setState({'messages' : res.data});
     });
 	}
 
